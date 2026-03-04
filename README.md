@@ -1,5 +1,7 @@
 # Calculator
 
+![Image](https://github.com/user-attachments/assets/ed2d888b-a509-4750-9e82-44a5f14a2566)
+
 A robust, responsive web-based calculator built from scratch using vanilla JavaScript, HTML, and CSS. This project features a custom mathematical evaluation engine handling the Order of Operations (BEDMAS), a dynamic UI with light/dark modes, and a clean code structure without external dependencies.
 
 ## 🚀 Live Demo
