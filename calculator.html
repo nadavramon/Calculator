@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+
+<body>
+    <div class="page">
+        <input type="checkbox" id="theme-toggle" class="theme-toggle-input">
+
+        <div class="calculator">
+            <!-- Toggle switch label positioned inside calculator -->
+            <label for="theme-toggle" class="theme-toggle-label">
+                <span class="theme-toggle-track">
+                    <span class="theme-toggle-thumb"></span>
+                </span>
+            </label>
+
+            <div class="display">
+                <span class="display-expression" id="expression"></span>
+                <span class="display-text" id="display">0</span>
+            </div>
+            <div class="keypad">
+                <!-- Row 1 -->
+                <button class="btn btn-light btn-backspace" data-action="backspace" aria-label="Backspace">
+                    <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 6H9l-6 6 6 6h12a1 1 0 001-1V7a1 1 0 00-1-1z" />
+                        <line x1="17" y1="10" x2="13" y2="14" />
+                        <line x1="13" y1="10" x2="17" y2="14" />
+                    </svg>
+                </button>
+                <button class="btn btn-light" id="clearBtn" data-action="clear">AC</button>
+                <button class="btn btn-light btn-percent" data-action="percent">%</button>
+                <button class="btn btn-op" data-action="operator" data-value="÷">÷</button>
+
+                <!-- Row 2 -->
+                <button class="btn btn-num" data-action="number" data-value="7">7</button>
+                <button class="btn btn-num" data-action="number" data-value="8">8</button>
+                <button class="btn btn-num" data-action="number" data-value="9">9</button>
+                <button class="btn btn-op" data-action="operator" data-value="×">×</button>
+
+                <!-- Row 3 -->
+                <button class="btn btn-num" data-action="number" data-value="4">4</button>
+                <button class="btn btn-num" data-action="number" data-value="5">5</button>
+                <button class="btn btn-num" data-action="number" data-value="6">6</button>
+                <button class="btn btn-op" data-action="operator" data-value="−">−</button>
+
+                <!-- Row 4 -->
+                <button class="btn btn-num" data-action="number" data-value="1">1</button>
+                <button class="btn btn-num" data-action="number" data-value="2">2</button>
+                <button class="btn btn-num" data-action="number" data-value="3">3</button>
+                <button class="btn btn-op" data-action="operator" data-value="+">+</button>
+
+                <!-- Row 5 -->
+                <button class="btn btn-num btn-plusminus" data-action="plusminus" aria-label="Toggle sign">
+                    <span class="plusminus-plus">+</span>
+                    <span class="plusminus-slash">/</span>
+                    <span class="plusminus-minus">−</span>
+                </button>
+                <button class="btn btn-num" data-action="number" data-value="0">0</button>
+                <button class="btn btn-num btn-dot" data-action="decimal">.</button>
+                <button class="btn btn-op" data-action="equals">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+
+</html>
