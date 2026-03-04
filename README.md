@@ -4,7 +4,7 @@ A robust, responsive web-based calculator built from scratch using vanilla JavaS
 
 ## 🚀 Live Demo
 
-[View Live Demo](#) *(Replace with your deployed link)*
+[View Live Demo](https://nadavramon.github.io/Calculator/calculator.html)
 
 ## ✨ Features
 
